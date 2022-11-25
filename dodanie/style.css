@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    
+    box-sizing: border-box;
+}
+.body{
+    font-family: Helvetica;
+    max-height: 1080px;
+    max-width: 1920px;
+}
+
+.lewy{
+text-align: center;
+background-color: navy;
+color: white;
+height: 1000;
+width: auto;
+/*float: left;*/
+grid-area: lewo;
+}
+
+.prawy_gora{
+    background-color: RoyalBlue;
+    height: 100px;
+    width: auto;
+    text-align: center;
+    /*float: right;*/
+    grid-area: prawy_gora;
+}
+.prawy_srodek{
+    background-color: steelblue;
+    height: auto;
+    width: auto;
+    text-align: center;
+    
+    /*float: right;*/
+    grid-area: prawy_srodek;
+}
+.prawy_dol{
+    text-align: center;
+    background-color: royalblue;
+    height: 300px;
+    width: auto;
+    text-align: center;
+    /* float: right; */
+    grid-area: prawy_dol;
+}
+.prawy_dol form{
+    line-height: 1.5;
+    margin: 30px;
+}
+.stoopka{
+    background-color: steelblue;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    /*float: none;*/
+    grid-area: stoopka;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "lewo prawy_gora prawy_gora prawy_gora"
+    "lewo prawy_srodek prawy_srodek prawy_srodek"
+    "lewo prawy_dol prawy_dol prawy_dol"
+    "stoopka stoopka stoopka stoopka";
+}

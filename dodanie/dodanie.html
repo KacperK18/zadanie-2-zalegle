@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dodaj klub</title>
+</head>
+<body>
+<div class="grid">
+        <div class="prawy_srodek">
+            <h3>Regiony</h3>
+                <li>Europa</li>
+                <li>Ameryka Północna</li>
+                <li>Ameryka Południowa</li>
+                <li>Pozostałe ligi</li>
+            <img src="../gif/tlumacze.gif" style="width:50%; height:auto;">
+        </div>
+        <div class="prawy_dol">
+            <form action="dodaj.php" method="post">
+            Nazwa klubu<input type="text" name="nazwa"><br>
+            Opis<input type="text" name="opis"><br>
+            Region<input type="number" name="region" min="1" max="4"><br>
+            <input type="reset" value="WYCZYŚĆ">
+            <input type="submit" value="DODAJ">
+        </form>
+
+            <img src="kadr.jpg" alt="">
+        </div>
+        <footer>
+        <a href="../index.html">Powrót do strony głównej</a>
+        <a href="../odczyt/odczyt (2).php">Zawarte kluby</a>
+        </footer>
+</div>
+    
+</body>
+</html>
